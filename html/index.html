@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인페이지</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/패밀리레스토랑.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="navbar-logo">
+          <a href="패밀리레스토랑.html">
+            <img src="../image/logo_2.png" alt="STORE Logo" />
+          </a>
+        </div>
+        <div class="navbar-menu">
+          <a href="#">BRAND</a>
+          <a href="#">MENU</a>
+          <a href="#">EVENT</a>
+          <a href="#">STORE</a>
+          <a href="#" style="color: red">DELIVERY</a>
+        </div>
+
+        <div class="navbar-right">
+          <a href="#">고객의 소리</a>
+          <a href="#">채용</a>
+          <a href="#">로그인</a>
+          <a href="#" class="signup">회원가입</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>로그인</h1>
+      <div class="login-form">
+        <div class="form-group">
+          <label>
+            아이디:
+            <input
+              type="text"
+              id="username"
+              placeholder="아이디를 입력하세요"
+            />
+          </label>
+        </div>
+      </div>
+      <div class="login-form">
+        <div class="form-group">
+          <label>
+            비밀번호:
+            <input
+              type="password"
+              id="password"
+              placeholder="비밀번호를 입력하세요"
+            />
+          </label>
+        </div>
+        <button id="loginBtn">로그인</button>
+        <button id="logoutBtn" style="display: none">로그아웃</button>
+
+        <div id="loginResult" class="result"></div>
+        <div class="welcom-text">
+          <p>테스트 계정 : admin/1234</p>
+          <p>user 계정 : user/1234</p>
+        </div>
+      </div>
+    </div>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
